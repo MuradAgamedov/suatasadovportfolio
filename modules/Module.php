@@ -1,4 +1,5 @@
 <?php
+
 namespace modules;
 
 use Craft;
@@ -12,6 +13,9 @@ class Module extends BaseModule
     public function init()
     {
         parent::init();
+
+        // ✅ ƏSAS SƏTİR – Craft-a modules alias-ını tanıtdırırıq
+        Craft::setAlias('@modules', __DIR__);
 
         // Twig qlobal "dict" dəyişəni əlavə olunur
         Event::on(
