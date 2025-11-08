@@ -1,0 +1,9 @@
+baseUrl: 'http://localhost:8080'
+enabled: true
+handle: default
+hasUrls: true
+language: az
+name: 'Suat Əsədov'
+primary: true
+siteGroup: c4e71730-2b3b-40f1-96f1-cc2c361cb915 # SuatAsadov
+sortOrder: 1

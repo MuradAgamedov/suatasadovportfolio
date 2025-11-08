@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: card_description
+instructions: null
+name: 'Card description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  40367aaf-eee3-4fe6-a876-8990d54613a4:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:28:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4444763e-c07d-431f-a6fd-b6ab39a43bd9 # email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a3abc01-7791-45ae-8a19-4d201f07beb3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 911b5a40-a378-42ac-bd6d-75299366c996
+        userCondition: null
+handle: email
+hasTitleField: false
+icon: at
+name: Email
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{email}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,37 @@
+  
+  
+  
+<script>
+  lucide.createIcons();
+</script>
+
+<script>
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+
+  function openModal(src) {
+    modalImg.src = src;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  modal.addEventListener('click', () => closeModal());
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script>
+  <script>
+  lucide.createIcons();
+</script>
+
+  <script>
+    // current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+  lucide.createIcons();
+</script>

@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: bddea0c0-141c-4ec4-8345-54770611d423 # Diplomas
+handle: diplomas
+maxAuthors: 1
+name: Diplomas
+previewTargets:
+  -
+    label: 'Основная запись страница'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a53f373b-5ae8-45fb-bc64-bc75d760227e: # Suat Əsədov
+    enabledByDefault: true
+    hasUrls: true
+    template: diplomas/_entry.twig
+    uriFormat: 'diplomas/{slug}'
+  e705b9db-b8d7-4d03-bead-e87252e55c98: # Suat Asadov
+    enabledByDefault: true
+    hasUrls: true
+    template: diplomas/_entry.twig
+    uriFormat: 'diplomas/{slug}'
+structure:
+  maxLevels: null
+  uid: a428dd17-c1af-478f-bae9-c2b69c83ce3a
+type: structure

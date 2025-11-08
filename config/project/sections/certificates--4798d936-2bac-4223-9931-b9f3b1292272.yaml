@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 825c60ae-1495-409d-823c-b118a40bb6f3 # Certificates
+handle: certificates
+maxAuthors: 1
+name: Certificates
+previewTargets:
+  -
+    label: 'Основная запись страница'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a53f373b-5ae8-45fb-bc64-bc75d760227e: # Suat Əsədov
+    enabledByDefault: true
+    hasUrls: true
+    template: certificates/_entry.twig
+    uriFormat: 'certificates/{slug}'
+  e705b9db-b8d7-4d03-bead-e87252e55c98: # Suat Asadov
+    enabledByDefault: true
+    hasUrls: true
+    template: certificates/_entry.twig
+    uriFormat: 'certificates/{slug}'
+structure:
+  maxLevels: null
+  uid: bb2712aa-b0ea-476d-b58d-610823ed18e8
+type: structure

@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  f2671759-257c-4a89-9faa-405511349fa9:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-06T12:15:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0aa808d5-6a95-4b16-8a37-e765b7e4f0fe # SpecTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a14ebfa9-89c2-4a84-9e36-dc12de8edf35
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 0c5e46ef-fb26-4609-afb0-1feecfbd48ea
+        userCondition: null
+handle: herounderspecialists
+hasTitleField: false
+icon: user-doctor-hair
+name: HeroUnderSpecialists
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{spect_title_main}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

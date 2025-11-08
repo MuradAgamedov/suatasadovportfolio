@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  cbcd2ab5-2760-4ab2-acf1-0d06dabc131a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:32:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ac543a87-6a51-46b2-9aa3-91bf00a83f3b # Uni name
+            handle: uniName
+            includeInCards: false
+            instructions: null
+            label: 'University name'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04b9495d-5f7e-4893-9e78-54df315a3f0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:32:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c962ac2a-bbae-4b79-a78f-eef5ba476023 # Education Level
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4253cce2-740f-4a50-b95c-83349dc35d8d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:32:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d171449-3022-47a7-bd81-a8411fe7f822 # Years
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc24a02c-4896-41ea-a93a-880b2a5ab31a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 93b45969-b687-4f70-958b-a4e55e1ca09d
+        userCondition: null
+handle: university
+hasTitleField: false
+icon: building-columns
+name: University
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{educationLevel}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

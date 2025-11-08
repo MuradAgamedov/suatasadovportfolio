@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  7830b2d4-6b94-4dc4-a803-151b7135f266:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:34:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 09bf9695-b053-4276-b00d-0d20d96c1f06 # Course name
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d893840-ef4e-47bc-9128-824c717c5263
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:34:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3abcc329-dc87-4307-bc40-f2a68fee0545 # Course specialisty
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00465876-816d-4e68-9b79-fa6fdbf734c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:34:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 88840d69-f863-45bd-81a0-05bfb1c23ecc # Education Years
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fa4b420-6af8-4cf2-a842-4589c27599a6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 46c9bd74-2f03-466b-aec0-bfdf18bf9fe4
+        userCondition: null
+handle: courses
+hasTitleField: false
+icon: null
+name: Courses
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{courseSpecialisty}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

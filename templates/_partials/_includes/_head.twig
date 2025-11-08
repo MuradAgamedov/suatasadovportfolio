@@ -1,0 +1,93 @@
+{# templates/_partials/_includes/_head.twig #}
+
+{% set seo = craft.entries.section('seoData').one() %}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>
+  {{ seo.seoTitle 
+    ?? entry.seoTitle 
+    ?? entry.title 
+    ?? 'Suat Əsədov — IT Specialist' }}
+</title>
+
+{# Dinamik SEO meta-lar (Seo data → Entry → Default fallback) #}
+<meta name="description" content="{{ seo.seoDescription 
+  ?? entry.seoDescription 
+  ?? 'Windows Server, Şəbəkə, Virtualizasiya və Təhlükəsizlik üzrə IT mütəxəssisi.' }}">
+
+<meta name="keywords" content="{{ seo.seoKeyword
+  ?? entry.seoKeywords 
+  ?? 'Windows Server, Network, VMware, Hyper-V, Active Directory, IT Support' }}">
+
+{# Tailwind və Lucide ikonları #}
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+{# Google fontlar #}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+{# Lokal CSS və JS (web/css və web/js qovluqları üçün) #}
+<link rel="stylesheet" href="{{ siteUrl('css/style.css') }}">
+<script src="{{ siteUrl('js/main.js') }}" defer></script>
+
+{# Bəzi qlobal stillər (sürüşmə və şüşə effektləri) #}
+<style>
+  html { scroll-behavior: smooth; }
+  .glass {
+    backdrop-filter: saturate(180%) blur(10px);
+    background: rgba(255, 255, 255, .6);
+  }
+</style>
+
+{# Open Graph meta-lar (Facebook, LinkedIn üçün) #}
+<meta property="og:title" content="{{ seo.seoTitle 
+  ?? entry.seoTitle 
+  ?? 'Suat Əsədov — IT Specialist' }}" />
+
+<meta property="og:description" content="{{ seo.seoDescription 
+  ?? entry.seoDescription 
+  ?? 'Windows Server, Şəbəkə, Virtualizasiya və Təhlükəsizlik üzrə IT mütəxəssisi.' }}" />
+
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{ entry.heroImage.one().url 
+  ?? siteUrl('assets/images/default-og.jpg') }}" />
+<meta property="og:url" content="{{ craft.app.request.absoluteUrl }}" />
+<meta name="theme-color" content="#0f172a" />
+
+{# Twitter meta-lar #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ seo.seoTitle 
+  ?? entry.seoTitle 
+  ?? 'Suat Əsədov — IT Specialist' }}">
+<meta name="twitter:description" content="{{ seo.seoDescription 
+  ?? entry.seoDescription 
+  ?? 'Windows Server, Şəbəkə, Virtualizasiya və Təhlükəsizlik üzrə IT mütəxəssisi.' }}">
+<meta name="twitter:image" content="{{ entry.heroImage.one().url 
+  ?? siteUrl('assets/images/default-og.jpg') }}">
+
+{# JSON-LD: Person Schema (SEO üçün strukturlaşdırılmış data) #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Suat Əsədov",
+  "jobTitle": "IT Specialist",
+  "email": "mailto:suatasadov74@gmail.com",
+  "telephone": "+994557639785",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "20 Yanvar küç., Mehdiabad qəs.",
+    "addressLocality": "Abşeron",
+    "addressCountry": "AZ"
+  },
+  "knowsAbout": [
+    "Windows Server", "Active Directory", "DNS", "DHCP", "Group Policy",
+    "TCP/IP", "VLAN", "VPN", "Routing & Switching",
+    "VMware ESXi", "Hyper-V", "SSL/TLS", "SSH", "Backup"
+  ]
+}
+</script>

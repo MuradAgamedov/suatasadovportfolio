@@ -1,0 +1,54 @@
+{% set diplomas = craft.entries.section('diplomas').all() %}
+
+<!-- Diplomlar -->
+<section id="diplomlar" class="py-16 bg-slate-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <h2 class="text-3xl md:text-4xl font-bold">Diplomlar</h2>
+      <p class="max-w-2xl text-slate-600">
+        Rəsmi diplomlarla təsdiqlənmiş ixtisaslaşmış texniki bacarıqlar.
+      </p>
+    </div>
+
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for diploma in diplomas %}
+        {% set image = diploma.diplomas.one() %}
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          {% if image %}
+            <img 
+              src="{{ image.url }}" 
+              alt="{{ diploma.diplomaTitle }}" 
+              class="rounded-xl mb-4 w-full h-56 object-cover cursor-pointer hover:opacity-90 transition"
+              onclick="openModal('{{ image.url }}')" 
+            />
+          {% endif %}
+          <h3 class="font-semibold">{{ diploma.diplomaTitle }}</h3>
+          <p class="text-sm text-slate-600 mt-1">
+            {{ diploma.diplomaDescription }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Modal (Universal for all images) -->
+<div id="imageModal"
+  class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50 backdrop-blur-sm">
+  <img id="modalImage" src="" alt="Diploma" class="max-w-4xl max-h-[90vh] rounded-2xl ring-1 ring-white/20 shadow-2xl">
+</div>
+
+<script>
+function openModal(src) {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  modalImg.src = src;
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+}
+document.getElementById('imageModal').addEventListener('click', () => {
+  const modal = document.getElementById('imageModal');
+  modal.classList.remove('flex');
+  modal.classList.add('hidden');
+});
+</script>

@@ -1,0 +1,156 @@
+dateModified: 1762527887
+email:
+  fromEmail: developer@dev.az
+  fromName: SuatAsadov
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  certificates:
+    hasUrls: true
+    name: certificates
+    settings:
+      path: '@webroot/certificates'
+    type: craft\fs\Local
+    url: '@web/certificates'
+  diplomas:
+    hasUrls: true
+    name: diplomas
+    settings:
+      path: '@webroot/diplomas'
+    type: craft\fs\Local
+    url: '@web/diplomas'
+  heroImages:
+    hasUrls: true
+    name: hero_images
+    settings:
+      path: '@webroot/hero_images'
+    type: craft\fs\Local
+    url: '@web/hero_images'
+  services:
+    hasUrls: true
+    name: services
+    settings:
+      path: '@webroot/services'
+    type: craft\fs\Local
+    url: '@web/services'
+  siteinfo:
+    hasUrls: true
+    name: SiteInfo
+    settings:
+      path: '@webroot/site_info'
+    type: craft\fs\Local
+    url: '@web/site_info'
+meta:
+  __names__:
+    00a82a55-1957-4857-9134-774422d01896: 'Card description' # Card description
+    0aa808d5-6a95-4b16-8a37-e765b7e4f0fe: SpecTitle # SpecTitle
+    0eeaedd5-ee74-466f-bfe0-63ef3461c81b: HeroData # HeroData
+    1e039196-6e62-4425-9d38-16e103558b13: Followed # Followed
+    1f942e25-b8ab-4398-b88f-cd8447f399ee: Address # Address
+    1fcbbae8-3c53-4402-85b3-45f9425d86ef: Languages # Languages
+    2c53745d-9ab1-4f05-900f-4a6e1348aef5: 'Hero now Address' # Hero now Address
+    2cc74766-bde9-4bcb-84e2-5664ef37595a: University # University
+    2cd39f42-6d95-4e0f-90bd-11a495e77e2a: Phones # Phones
+    2d171449-3022-47a7-bd81-a8411fe7f822: Years # Years
+    3abcc329-dc87-4307-bc40-f2a68fee0545: 'Course specialisty' # Course specialisty
+    4b129647-0c0b-4f29-afdb-5fd5654a5f1a: spec_title # spec_title
+    4ced3b62-49ce-461b-8492-daac9dbfde92: 'Service title' # Service title
+    4e805660-f9a5-4949-9b01-e4cb1bb0f2c0: Certificates # Certificates
+    4f4a74e3-96ed-4d76-8f31-e50c9883ad8b: Email # Email
+    5a234ede-52ab-441a-a455-38321b501bea: ServiceImage # ServiceImage
+    5a313340-f9ce-479a-bccd-3b14b979bddd: 'Language name' # Language name
+    5fbc6c37-f419-4308-8edf-5aece4685063: 'Hero under specialists' # Hero under specialists
+    6b3fc265-7f98-4050-ac51-be0f944824c3: HeroUnderSpecialists # HeroUnderSpecialists
+    6dcd824b-24b1-47c0-8d24-c09464396a46: 'Hero description' # Hero description
+    06f56329-0441-4b19-a619-bd097b09aca6: 'Whatsapp number' # Whatsapp number
+    7a9c7d50-aaad-4771-9c7b-c04d4ecab701: 'Hero specialists' # Hero specialists
+    7c6face9-d9d3-400c-aec6-ce2130605392: 'Diploma description' # Diploma description
+    09bf9695-b053-4276-b00d-0d20d96c1f06: 'Course name' # Course name
+    9d6f7af0-984c-4ead-998a-71ba1763e2fd: Courses # Courses
+    9d9175c6-df4c-4ea1-8cd6-7d0657a40e70: HeroSpecialistsMain # HeroSpecialistsMain
+    18a3e735-d67d-423f-9c4c-3770d81a9024: Address # Address
+    30bcd940-eece-442a-935e-e8f22061f1be: SiteInfo # SiteInfo
+    31ac301e-0a3d-4b23-972b-5b4db258bcd3: Indexed # Indexed
+    35ad5ce2-9ffc-4317-b3f5-c2ce4d6e12a3: Title # Title
+    70ca09f0-4f65-4ac6-bae1-29f2deff20dd: 'Bullet title' # Bullet title
+    81a7f22c-2259-4665-9baf-44d4dff99977: About # About
+    85aafdd4-56cf-4652-b49d-37201f6549de: Service # Service
+    85cf59c3-e000-4f1f-a715-68e234d7fc96: 'Diploma title' # Diploma title
+    92b09090-e729-4e57-b642-992b0133dfa8: 'Site information' # Site information
+    93fa33ae-0f8e-41dc-9ec3-013f828b7117: Diplomas # Diplomas
+    143b8c67-d15e-44bc-95eb-a1b596d08034: Dictionary # Dictionary
+    530dbcd5-bc45-4270-a74a-2ef0800d40cd: Email # Email
+    568ed9bc-0e94-4fb6-bb58-cdf7b349dbd8: 'Seo description' # Seo description
+    693a5968-6069-4323-9bae-d544221573df: 'Certificate image' # Certificate image
+    781e8262-af2f-499d-a977-0f68a5aa927e: 'Certificate description' # Certificate description
+    825c60ae-1495-409d-823c-b118a40bb6f3: Certificates # Certificates
+    903efa97-66bf-4f11-ab63-2101332f9b09: 'Seo title' # Seo title
+    4303b33d-96d3-4f7d-bfb6-00130b976dd8: 'Copyright text' # Copyright text
+    4798d936-2bac-4223-9931-b9f3b1292272: Certificates # Certificates
+    6654b065-40d0-4d00-8639-b2a8a667c131: 'Header logo' # Header logo
+    6813cad0-70a5-40a5-9887-bdbff6284212: 'About text' # About text
+    9567e01a-d14a-428a-9e7d-59b41a116318: 'About image' # About image
+    47874a18-9b2b-47c4-94dd-bb40a3ce1d5b: cert_title # cert_title
+    88840d69-f863-45bd-81a0-05bfb1c23ecc: 'Education Years' # Education Years
+    89047f5b-8f38-4821-a1c9-ca76f25a779c: ImageCardLabel # ImageCardLabel
+    265090e5-3cd1-4161-a57e-8bd9060efe19: 'Site information' # Site information
+    0374862c-80a0-4b7e-a165-7c8962deaaad: Services # Services
+    834057d4-19a3-4e42-a2c7-80f50bb450b5: Title # Title
+    1631509d-f552-4dd2-9966-7efde27a341b: HeroSpecialists # HeroSpecialists
+    3318888e-64d2-4901-980c-34079239ba67: Languages # Languages
+    4444763e-c07d-431f-a6fd-b6ab39a43bd9: email # email
+    24361353-9256-404b-ac4f-e62b5df843ca: 'Seo data' # Seo data
+    37273610-5c06-4122-9670-d16331742d14: 'Hero image' # Hero image
+    37744663-67d6-4a4a-a814-7e660aab35e1: Diplomas # Diplomas
+    53482345-5da7-4e4e-83a0-a38808f12173: HeroImages # HeroImages
+    78523968-62a1-40df-a929-95a306cbc966: 'Cv file' # Cv file
+    82738347-1754-469f-a286-92bdf1860d86: 'Hero Data' # Hero Data
+    a53f373b-5ae8-45fb-bc64-bc75d760227e: 'Suat Əsədov' # Suat Əsədov
+    ab6ce375-dd23-4d02-b41d-efac2be1f2f5: Dictionary # Dictionary
+    ac543a87-6a51-46b2-9aa3-91bf00a83f3b: 'Uni name' # Uni name
+    aedc2ae7-39ba-453d-a49c-c865e6ee17a9: 'Footer right bullets' # Footer right bullets
+    b5dc86c0-b062-4138-8a11-c71a4f212936: value # value
+    b6441c1d-2e2a-4855-9166-e17c5933b7f7: 'Footer right bullet title' # Footer right bullet title
+    ba216155-4791-4cf7-8949-cb4713c9267f: 'About title' # About title
+    bb11b74e-4b43-4a4e-af27-f99c9ff929d3: Services # Services
+    bc0c2560-712d-4588-bdc1-097c67b0f1ab: ImageCardTitle # ImageCardTitle
+    bd98420d-9fef-4d99-9c28-1ee32ebbc5d6: 'Footer right bullet title' # Footer right bullet title
+    bddea0c0-141c-4ec4-8345-54770611d423: Diplomas # Diplomas
+    c4b7986f-30f9-4b90-b24d-5d559e1718b8: Courses # Courses
+    c4e71730-2b3b-40f1-96f1-cc2c361cb915: SuatAsadov # SuatAsadov
+    c5c116c2-49ee-4168-8227-849e4ed4e7df: address # address
+    c9a4a881-a49f-49fb-84c6-eebf25994c89: 'Footer left bullets' # Footer left bullets
+    c36e55d2-079f-47cf-b341-d73aecd6b10f: 'Services bullets' # Services bullets
+    c962ac2a-bbae-4b79-a78f-eef5ba476023: 'Education Level' # Education Level
+    c998316c-ffa0-42bb-8aae-09ab433bc821: 'Hero now address right' # Hero now address right
+    cad8b827-f14b-4d5e-b93b-bf79f2660b02: keyword # keyword
+    cb6f3a9f-7107-48cd-a1ac-67132be782d7: 'Seo data' # Seo data
+    cc4fc4bf-0e30-446d-9a01-1a444d9ba995: 'Footer left bullets' # Footer left bullets
+    cda4f18e-8499-4b73-84d8-6f83f493667d: 'Language level' # Language level
+    d34f3484-3318-4772-b241-08f9da4a1c07: 'Seo keyword' # Seo keyword
+    d986f5c4-b04a-4e2f-bb73-58d68c9a0d9c: University # University
+    dd9601ca-2c6b-490c-aa64-8551db45e746: About # About
+    ddaf31cc-4a8b-454a-8064-d4d5d465f254: phone # phone
+    e4a5dc89-ae55-46fb-9466-fb4e3b690729: Diplomas # Diplomas
+    e49a7c04-e160-4238-8a7d-aafce29a2366: 'Hero now' # Hero now
+    e49eba0d-934f-4e90-a254-33dc4e09b57a: ServicesBullets # ServicesBullets
+    e705b9db-b8d7-4d03-bead-e87252e55c98: 'Suat Asadov' # Suat Asadov
+    f6e8803d-dab3-413c-8ff7-2f0d3f6a54f2: Phones # Phones
+    f6724b6d-a265-42fc-95be-0697d85b20db: 'Footer left bullet title' # Footer left bullet title
+    fa2f44ac-66a6-4018-b3e6-86acb619eebd: ImageCardDesc # ImageCardDesc
+    fd3bd333-8648-4c71-929b-63af660fc5c3: Services # Services
+    fd93b776-98d5-4e2a-a8b4-2e1ba479a52c: 'Seo footer' # Seo footer
+    ff0756eb-4964-4eee-85c6-3adeb97701d0: 'Public Schema' # Public Schema
+    ffd4465b-5e2c-495c-9fd3-e9d3ac44c849: 'Seo header' # Seo header
+system:
+  edition: solo
+  live: true
+  name: SuatAsadov
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

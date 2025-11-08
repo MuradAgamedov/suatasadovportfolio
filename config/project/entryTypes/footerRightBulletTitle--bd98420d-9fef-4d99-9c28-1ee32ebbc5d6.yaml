@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  82ca0d16-a89c-4512-91ab-a92cf3a555b9:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T06:14:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6441c1d-2e2a-4855-9166-e17c5933b7f7 # Footer right bullet title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a8c6bba-c9eb-4cee-bce2-9485074385b1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 3b85176a-579a-4730-bfa8-fcfe17418789
+        userCondition: null
+handle: footerRightBulletTitle
+hasTitleField: false
+icon: null
+name: 'Footer right bullet title'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{footerRightBulletTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

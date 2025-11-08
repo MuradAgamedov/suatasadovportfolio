@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  a8a5bfa6-1646-471b-827f-c214ed288eb3:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:42:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5a313340-f9ce-479a-bccd-3b14b979bddd # Language name
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa896e57-beff-4aeb-864e-004a4032652d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:42:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cda4f18e-8499-4b73-84d8-6f83f493667d # Language level
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41fb70af-046e-45e2-be11-c9dbe26aed09
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 6ce334c9-7839-45f5-8a05-c5392f70ec6f
+        userCondition: null
+handle: languages
+hasTitleField: false
+icon: earth-africa
+name: Languages
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{languageName}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

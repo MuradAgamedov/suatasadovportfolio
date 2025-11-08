@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  94a8360b-4813-424a-ab07-eed650b08e5d:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:17:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 85cf59c3-e000-4f1f-a715-68e234d7fc96 # Diploma title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99888f2f-19de-45c1-a678-f013d004b15b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:17:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7c6face9-d9d3-400c-aec6-ce2130605392 # Diploma description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62b03783-483d-4abe-90ff-81424588fd2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:14:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 93fa33ae-0f8e-41dc-9ec3-013f828b7117 # Diplomas
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52b491b0-cb00-404c-b9d1-cdf683509a5d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 8cf75a34-2d46-4e1b-83b1-91e6b75e22cf
+        userCondition: null
+handle: diplomas
+hasTitleField: false
+icon: file-certificate
+name: Diplomas
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{diplomaTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

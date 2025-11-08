@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  cda9cfde-8141-4b29-a4ac-1ffd7191ea41:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-06T12:53:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 70ca09f0-4f65-4ac6-bae1-29f2deff20dd # Bullet title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 491087ef-53e6-4aa4-bcb7-b87a17a8d8de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-06T12:54:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 85aafdd4-56cf-4652-b49d-37201f6549de # Service
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 081fb314-b846-401d-a0e4-b96725a42f77
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-06T12:51:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8a571030-6293-41db-b948-3ebb52343d01
+            handle: service_id
+            includeInCards: false
+            instructions: null
+            label: Service
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43f1cc3b-1fc2-4056-9f3d-af75d2fdb1e1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 1ec2d641-233c-4522-9a39-738c796647b5
+        userCondition: null
+handle: servicesbullets
+hasTitleField: false
+icon: ellipsis-stroke-vertical
+name: ServicesBullets
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{bullet_title}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

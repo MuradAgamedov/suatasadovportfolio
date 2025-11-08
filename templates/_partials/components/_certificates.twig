@@ -1,0 +1,33 @@
+{% set certificates = craft.entries.section('certificates').all() %}
+
+<!-- Sertifikatlar -->
+<section id="sertifikatlar" class="py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <h2 class="text-3xl md:text-4xl font-bold">{{dict['certificates']}}</h2>
+      <p class="max-w-2xl text-slate-600">
+        {{dict['certificates_section_text']}}
+      </p>
+    </div>
+
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for cert in certificates %}
+        {% set image = cert.certificateImage.one() %}
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          {% if image %}
+            <img 
+              src="{{ image.url }}" 
+              alt="{{ cert.cert_title }}" 
+              class="rounded-xl mb-4 w-full h-44 object-cover cursor-pointer hover:opacity-90 transition"
+              onclick="openModal('{{ image.url }}')" 
+            />
+          {% endif %}
+          <h3 class="font-semibold">{{ cert.cert_title }}</h3>
+          <p class="text-sm text-slate-600 mt-1">
+            {{ cert.certificateDescription }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

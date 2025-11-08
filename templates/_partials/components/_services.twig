@@ -1,0 +1,41 @@
+{% set services = craft.entries.section('services').all() %}
+
+<section id="xidmetler" class="py-16 bg-slate-900 text-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <h2 class="text-3xl md:text-4xl font-bold">{{dict['services']}}</h2>
+      <p class="max-w-2xl text-slate-300">
+       {{dict['services_section_text']}}
+      </p>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for service in services %}
+        <article class="group bg-white/5 rounded-2xl p-6 ring-1 ring-white/10 hover:ring-white/20 transition">
+          
+          {# Şəkil (əgər varsa) #}
+          {% set image = service.serviceimage.one() %}
+          {% if image %}
+            <div class="flex items-center justify-center h-14 w-14 rounded-xl bg-white/10 mb-5">
+              <img src="{{ image.url }}" alt="{{ image.title }}" class="w-10 h-10 object-contain">
+            </div>
+          {% endif %}
+
+          {# Başlıq və təsvir #}
+          <h3 class="text-xl font-semibold mb-2">{{ service.service_title }}</h3>
+          <p class="text-slate-300 text-sm">{{ service.card_description }}</p>
+
+          {# İndi bu xidmətin bullet-ləri çıxır #}
+          {% set bullets = craft.entries.section('servicesbullets').relatedTo(service).all() %}
+          {% if bullets|length %}
+            <ul class="mt-4 space-y-1 text-sm text-slate-300 list-disc list-inside">
+              {% for bullet in bullets %}
+                <li>{{ bullet.bullet_title }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

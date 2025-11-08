@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  b480c3b5-dbdc-4700-a0d2-9c7aadd71eca:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:22:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ddaf31cc-4a8b-454a-8064-d4d5d465f254 # phone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 079ca0a4-f43e-4ab1-a7a0-a8f11480971f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 0d37751d-921d-40ba-a385-9466b9f41438
+        userCondition: null
+handle: phones
+hasTitleField: false
+icon: phone
+name: Phones
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{phone}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

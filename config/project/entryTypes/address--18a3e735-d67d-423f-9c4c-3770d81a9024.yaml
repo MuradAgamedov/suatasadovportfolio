@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  25ed117f-eed5-4c81-a5c4-c9466f107092:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:29:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c5c116c2-49ee-4168-8227-849e4ed4e7df # address
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb8aba2a-9a54-45da-8ecc-e8a61ed41f98
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 1432959f-58f6-4462-ad83-9e216788efcd
+        userCondition: null
+handle: address
+hasTitleField: false
+icon: location-dot
+name: Address
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{address}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  8cee8458-1337-42c2-8130-e737068e30ab:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T06:01:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f6724b6d-a265-42fc-95be-0697d85b20db # Footer left bullet title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7622bd4a-d677-4aaa-9170-4a9d0354b0d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: bc7e2440-1d40-403e-95b7-786702c93890
+        userCondition: null
+handle: footerLeftBullets
+hasTitleField: false
+icon: list
+name: 'Footer left bullets'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{footerLeftBulletTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

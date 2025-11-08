@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  21ffa101-39bd-4674-9bdf-c045592d8b68:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-06T12:05:28+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4b129647-0c0b-4f29-afdb-5fd5654a5f1a # spec_title
+            handle: spec_title
+            includeInCards: false
+            instructions: null
+            label: 'Spec Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e225588a-d380-48c7-bd84-9682268ca336
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 9b25d75a-0205-40e6-83ba-6664bd6b93cb
+        userCondition: null
+handle: herospecialistsmain
+hasTitleField: false
+icon: user-doctor
+name: HeroSpecialistsMain
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{spec_title}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

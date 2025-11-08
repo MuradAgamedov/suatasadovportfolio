@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: c9a4a881-a49f-49fb-84c6-eebf25994c89 # Footer left bullets
+handle: footerLeftBullets
+maxAuthors: 1
+name: 'Footer left bullets'
+previewTargets:
+  -
+    label: 'Основная запись страница'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a53f373b-5ae8-45fb-bc64-bc75d760227e: # Suat Əsədov
+    enabledByDefault: true
+    hasUrls: true
+    template: footer-left-bullets/_entry.twig
+    uriFormat: 'footer-left-bullets/{slug}'
+  e705b9db-b8d7-4d03-bead-e87252e55c98: # Suat Asadov
+    enabledByDefault: true
+    hasUrls: true
+    template: footer-left-bullets/_entry.twig
+    uriFormat: 'footer-left-bullets/{slug}'
+structure:
+  maxLevels: null
+  uid: 950e2b3f-ec7a-493d-a08d-3bfad62b885c
+type: structure

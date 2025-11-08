@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 4f4a74e3-96ed-4d76-8f31-e50c9883ad8b # Email
+handle: email
+maxAuthors: 1
+name: Email
+previewTargets:
+  -
+    label: 'Основная запись страница'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a53f373b-5ae8-45fb-bc64-bc75d760227e: # Suat Əsədov
+    enabledByDefault: true
+    hasUrls: true
+    template: email/_entry.twig
+    uriFormat: 'email/{slug}'
+  e705b9db-b8d7-4d03-bead-e87252e55c98: # Suat Asadov
+    enabledByDefault: true
+    hasUrls: true
+    template: email/_entry.twig
+    uriFormat: 'email/{slug}'
+structure:
+  maxLevels: null
+  uid: 5a06d966-9678-40cd-a45a-b348803f5c8b
+type: structure

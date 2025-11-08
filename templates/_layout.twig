@@ -1,0 +1,25 @@
+
+
+{# templates/_layout.twig #}
+
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+
+  {% include "_partials/_includes/_head.twig" %}
+ 
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased" style="font-family: 'Inter', sans-serif;">
+  {% include "_partials/components/_header.twig" %}
+
+  <main>
+     {% block content %}{% endblock %}
+  </main>
+
+    {% include "_partials/components/_footer.twig" %}
+     {% include "_partials/_includes/_foot.twig" %}
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 9d9175c6-df4c-4ea1-8cd6-7d0657a40e70 # HeroSpecialistsMain
+handle: herospecialists
+maxAuthors: 1
+name: 'Hero specialists'
+previewTargets:
+  -
+    label: 'Основная запись страница'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a53f373b-5ae8-45fb-bc64-bc75d760227e: # Suat Əsədov
+    enabledByDefault: true
+    hasUrls: true
+    template: herospecialists/_entry.twig
+    uriFormat: 'herospecialists/{slug}'
+  e705b9db-b8d7-4d03-bead-e87252e55c98: # Suat Asadov
+    enabledByDefault: true
+    hasUrls: true
+    template: herospecialists/_entry.twig
+    uriFormat: 'herospecialists/{slug}'
+structure:
+  maxLevels: null
+  uid: 5bd116a3-e0db-45c2-92f6-af7d35bfd970
+type: structure

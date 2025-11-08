@@ -1,0 +1,67 @@
+{% set footerLeft = craft.entries.section('footerLeftBullets').all() %}
+{% set footerRight = craft.entries.section('footerRightBullets').all() %}
+{% set siteSettings = craft.entries.section('headerSettings').one() %}
+{% set whatsapp = siteSettings.whatsappNumber ?? '+994 55 763 97 85' %}
+{% set copyright = siteSettings.copyrightText ?? '© 2025 Suat Asadov. Bütün hüquqlar qorunur.' %}
+
+<!-- Əlaqə -->
+<section id="elaqe" class="py-16 bg-slate-900 text-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      
+      <!-- Sol tərəf -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">{{dict['contact']}}</h2>
+        <p class="mt-4 text-slate-300">
+          {{dict['contact_section_text']}}
+        </p>
+
+        {% if footerLeft|length %}
+          <ul class="mt-6 space-y-3 text-slate-300 text-sm">
+            {% for item in footerLeft %}
+              <li>• {{ item.footerLeftBulletTitle }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <div class="mt-6 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 text-sm">
+          <p class="font-semibold">{{dict['Sürətli kontakt']}}</p>
+          <p class="text-slate-300 mt-1">
+            WhatsApp/Telefon: 
+            <a href="https://wa.me/{{ whatsapp|replace({' ': '', '+': ''}) }}" target="_blank" class="underline hover:text-white">
+              {{ whatsapp }}
+            </a>
+          </p>
+          <p class="text-slate-300">E-poçt: suatasadov74@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Sağ tərəf -->
+      <div class="bg-white/5 rounded-3xl p-8 ring-1 ring-white/10">
+        <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+          <i data-lucide="book-open" class="w-6 h-6"></i> {{dict['Tədris və Mentorluq']}}
+        </h3>
+        <p class="text-slate-300 mb-4">
+            {{dict['contact_section_text']}}
+        </p>
+
+        {% if footerRight|length %}
+          <ul class="space-y-2 text-slate-300 text-sm">
+            {% for item in footerRight %}
+              <li>📘 {{ item.footerRightBulletTitle }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <div class="mt-6">
+          <a href="https://wa.me/{{ whatsapp|replace({' ': '', '+': ''}) }}" target="_blank"
+            class="inline-flex items-center justify-center rounded-2xl bg-white text-slate-900 px-6 py-3 text-sm font-semibold hover:bg-slate-100">
+            <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i> {{dict['Ətraflı məlumat al']}}
+          </a>
+        </div>
+      </div>
+    </div>
+
+ 
+  </div>
+</section>

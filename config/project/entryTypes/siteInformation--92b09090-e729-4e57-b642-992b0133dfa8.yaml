@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  fb999b28-8b52-41d8-9621-531daf624312:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:51:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6654b065-40d0-4d00-8639-b2a8a667c131 # Header logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 907b0ddb-682f-4dd2-8f49-41c2d04a1556
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:47:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 06f56329-0441-4b19-a619-bd097b09aca6 # Whatsapp number
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4dcab0ea-82ed-4716-8c22-fd8dbe3925a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:51:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4303b33d-96d3-4f7d-bfb6-00130b976dd8 # Copyright text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17b7b19a-7c09-4fee-92e9-67be35e9f14a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: c9b98803-de5a-4347-b83c-a6a734c5019b
+        userCondition: null
+handle: siteInformation
+hasTitleField: false
+icon: circle-info
+name: 'Site information'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

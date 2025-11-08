@@ -1,0 +1,59 @@
+{% set about = craft.entries.section('about').one() %}
+{% set cvFile = about.cvFile.one() %}
+{% set aboutImage = about.aboutImage.one() %}
+
+<section id="haqqimda" class="py-20 bg-white">
+  <div class="mx-auto max-w-6xl px-5 md:px-10 grid lg:grid-cols-3 gap-12 items-start">
+
+    <!-- Left Column: Photo -->
+    <div class="lg:col-span-1 flex justify-center lg:justify-start">
+      {% if aboutImage %}
+        <img 
+          src="{{ aboutImage.url }}" 
+          alt="{{ about.aboutTitle ?? 'Haqqımda şəkil' }}"
+          class="rounded-3xl shadow-md ring-1 ring-slate-100 w-72 md:w-80 object-cover">
+      {% else %}
+        <img 
+          src="{{ siteUrl('assets/images/it-specialist.jpg') }}" 
+          alt="Suat Əsədov"
+          class="rounded-3xl shadow-md ring-1 ring-slate-100 w-72 md:w-80 object-cover">
+      {% endif %}
+    </div>
+
+    <!-- Right Column: Content -->
+    <div class="lg:col-span-2 space-y-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+        {{ about.aboutTitle ?? 'Haqqımda' }}
+      </h2>
+
+      <p class="text-slate-600 leading-relaxed text-justify">
+        {{ about.aboutText|raw }}
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        {% include "_partials/components/_contact_left_card.twig" %} 
+        {% include "_partials/components/_contact_right_card.twig" %} 
+      </div>
+      {% include "_partials/components/_contact_languages.twig" %}
+
+      <!-- Buttons -->
+      <div class="pt-4 flex flex-wrap gap-3">
+        {% if cvFile %}
+          <a 
+            id="cv"
+            href="{{ cvFile.url }}" 
+            target="_blank" 
+            download
+            class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-2.5 text-sm font-medium hover:bg-white">
+            📄 {{dict['CV endir (PDF)']}}
+          </a>
+        {% endif %}
+        <a 
+          href="#elaqe"
+          class="inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-5 py-2.5 text-sm font-medium hover:bg-slate-800">
+          {{dict['Görüş təyin et']}}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

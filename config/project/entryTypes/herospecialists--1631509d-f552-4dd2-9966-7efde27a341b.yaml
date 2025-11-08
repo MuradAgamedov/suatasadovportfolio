@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  851d1052-3204-4b12-a8cd-37e74bc6308e:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-06T11:27:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 35ad5ce2-9ffc-4317-b3f5-c2ce4d6e12a3 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 813af7d5-82e7-441f-9fa0-126b8c2a344a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: b6e26e15-1d55-4388-8653-dd8be218ed18
+        userCondition: null
+handle: herospecialists
+hasTitleField: false
+icon: briefcase
+name: HeroSpecialists
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{title}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

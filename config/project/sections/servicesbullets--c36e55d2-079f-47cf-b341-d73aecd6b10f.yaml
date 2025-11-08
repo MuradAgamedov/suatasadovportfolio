@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e49eba0d-934f-4e90-a254-33dc4e09b57a # ServicesBullets
+handle: servicesbullets
+maxAuthors: 1
+name: 'Services bullets'
+previewTargets:
+  -
+    label: 'Основная запись страница'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  a53f373b-5ae8-45fb-bc64-bc75d760227e: # Suat Əsədov
+    enabledByDefault: true
+    hasUrls: true
+    template: servicesbullets/_entry.twig
+    uriFormat: 'servicesbullets/{slug}'
+  e705b9db-b8d7-4d03-bead-e87252e55c98: # Suat Asadov
+    enabledByDefault: true
+    hasUrls: true
+    template: servicesbullets/_entry.twig
+    uriFormat: 'servicesbullets/{slug}'
+structure:
+  maxLevels: null
+  uid: b7996c69-d300-46ba-8100-4930890cd96b
+type: structure

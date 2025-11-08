@@ -1,0 +1,91 @@
+color: null
+description: null
+fieldLayouts:
+  53457264-128d-43b8-b6fd-2a2078bdf12c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T08:23:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ba216155-4791-4cf7-8949-cb4713c9267f # About title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f637b6b6-7ec6-4eb2-8462-187fc0afe619
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T08:23:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6813cad0-70a5-40a5-9887-bdbff6284212 # About text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f86e76bf-972c-41c6-b287-afa24b54262b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T08:23:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9567e01a-d14a-428a-9e7d-59b41a116318 # About image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9ed5ffa-658d-4386-a5c7-c20c8317f900
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T08:33:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 78523968-62a1-40df-a929-95a306cbc966 # Cv file
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b3d6bae-768d-4325-8cf3-f22ee798065e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 4c357d8e-4fa2-4485-aab9-dbc158a9805e
+        userCondition: null
+handle: about
+hasTitleField: false
+icon: null
+name: About
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

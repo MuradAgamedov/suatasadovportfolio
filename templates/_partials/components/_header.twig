@@ -1,0 +1,60 @@
+{% set settings = craft.entries.section('siteInformation').one() %}
+{% set headerLogo = settings.headerLogo.one() ?? null %}
+{% set currentSite = craft.app.sites.currentSite %}
+{% set allSites = craft.app.sites.getAllSites() %}
+
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-50">
+  <div class="glass shadow-sm border-b border-white/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="{{ siteUrl() }}" class="flex items-center gap-3">
+        {% if headerLogo %}
+          <div class="h-9 w-9 rounded-xl overflow-hidden ring-1 ring-slate-200">
+            <img src="{{ headerLogo.url }}" alt="{{ headerLogo.title }}" class="h-full w-full object-cover">
+          </div>
+        {% else %}
+          <div class="h-9 w-9 rounded-xl bg-slate-200 flex items-center justify-center text-xs text-slate-600 font-medium">
+            LOGO
+          </div>
+        {% endif %}
+        <span class="font-semibold tracking-tight">{{ currentSite.name }}</span>
+      </a>
+
+      <!-- Main navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        {% set navLinks = [
+          { href: '#xidmetler', label: dict['services']  },
+          { href: '#sertifikatlar', label: dict['certificates'] },
+          { href: '#diplomlar', label: dict['diplomas'] },
+          { href: '#haqqimda', label: dict['about'] },
+          { href: '#elaqe', label: dict['contact'] }
+        ] %}
+        {% for link in navLinks %}
+          <a href="{{ link.href }}" class="hover:text-slate-900">{{ link.label }}</a>
+        {% endfor %}
+        <a href="#cv" class="inline-flex items-center rounded-xl border px-3 py-1.5 hover:bg-white">CV</a>
+
+        <!-- Language switcher -->
+        <div class="flex items-center gap-2 ml-4">
+          {% for site in allSites %}
+            {% if site.id != currentSite.id %}
+              <a href="{{ site.baseUrl }}" class="text-slate-500 hover:text-slate-900 text-xs uppercase">
+                {{ site.language|slice(0,2) }}
+              </a>
+            {% else %}
+              <span class="text-slate-900 font-semibold text-xs uppercase">{{ site.language|slice(0,2) }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </nav>
+
+      <!-- Mobile button -->
+      <a href="#elaqe"
+         class="md:hidden inline-flex items-center rounded-xl border px-3 py-1.5 text-sm font-medium hover:bg-white">
+        Əlaqə
+      </a>
+    </div>
+  </div>
+</header>

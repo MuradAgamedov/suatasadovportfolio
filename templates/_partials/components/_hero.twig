@@ -1,0 +1,60 @@
+{% set heroData = craft.entries.section('herodata').one() %}
+{% set heroSpecs = craft.entries.section('herospecialists').all() %}
+
+<section class="pt-28 pb-16 bg-gradient-to-b from-slate-100 to-slate-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+
+      {# 🔹 Hero Specialist-ləri dinamik şəkildə birləşdiririk #}
+      {% if heroSpecs|length %}
+        <p class="text-xs uppercase tracking-[.2em] text-slate-500 mb-3">
+          {% for spec in heroSpecs %}
+            {{ spec.spec_title }}{% if not loop.last %} • {% endif %}
+          {% endfor %}
+        </p>
+      {% else %}
+        <p class="text-xs uppercase tracking-[.2em] text-slate-500 mb-3">
+          IT Specialist • Windows Server • Network • Virtualization
+        </p>
+      {% endif %}
+
+      {{ heroData.hero_title|raw }}
+
+      <p class="mt-6 text-lg text-slate-600 max-w-2xl">
+        {{ heroData.heroDescription }}
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#elaqe"
+          class="inline-flex items-center justify-center rounded-2xl bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800">
+          {{dict['get_consultation']}}
+        </a>
+        <a href="#xidmetler"
+          class="inline-flex items-center justify-center rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-white">
+          {{dict['see_services']}}
+        </a>
+      </div>
+
+      <div class="mt-8 flex items-center gap-6 text-sm text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          {{ heroData.heroNow }}
+        </div>
+        <div>{{ heroData.heroNowAddress }} • {{ heroData.heroNowAddressright }}</div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <img 
+        src="{{ heroData.heroImage.one() ? heroData.heroImage.one().url : siteUrl('assets/images/it.jpg') }}" 
+        alt="{{ heroData.heroImage.one() ? heroData.heroImage.one().title : 'Data Center' }}"
+        class="rounded-3xl shadow-2xl ring-1 ring-slate-200">
+
+      <div class="absolute -bottom-8 -left-6 bg-white rounded-2xl shadow-lg p-4 ring-1 ring-slate-200 w-64">
+        <p class="text-xs text-slate-500">{{ heroData.imagecardlabel }}</p>
+        <p class="text-sm font-semibold">{{ heroData.imagecardtitle }}</p>
+        <p class="text-xs text-slate-500 mt-1">{{ heroData.imagecarddesc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

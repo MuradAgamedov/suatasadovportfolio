@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  575a6a8a-951c-4298-870d-d47086fd9ead:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-07T05:58:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cad8b827-f14b-4d5e-b93b-bf79f2660b02 # keyword
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e358a606-73f6-4235-ab7c-883c151bf252
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-11-07T05:58:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b5dc86c0-b062-4138-8a11-c71a4f212936 # value
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e304ffa-c946-4d69-8aa6-98da37292e43
+            userCondition: null
+            warning: null
+            width: 100
+        name: Контент
+        uid: 6666ee3b-e1b9-4ea2-9be5-fc6550c0eee5
+        userCondition: null
+handle: dictionary
+hasTitleField: false
+icon: language
+name: Dictionary
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{keyword}:  {value}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
