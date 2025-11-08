@@ -1,21 +1,33 @@
-{% set phoneEntry = craft.entries.section('phones').one() %}
-{% set emailEntry = craft.entries.section('email').one() %}
-{% set addressEntry = craft.entries.section('address').one() %}
+{% set phoneEntries = craft.entries.section('phones').all() %}
+{% set emailEntries = craft.entries.section('email').all() %}
+{% set addressEntries = craft.entries.section('address').all() %}
 
 <!-- Contact Card -->
 <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-5 hover:bg-slate-100 transition">
   <h3 class="font-semibold text-slate-700 mb-3 flex items-center gap-2">
-    <i data-lucide="phone" class="w-4 h-4 text-slate-500"></i> {{dict['contact']}}
+    <i data-lucide="phone" class="w-4 h-4 text-slate-500"></i> {{ dict['contact'] }}
   </h3>
+
   <ul class="space-y-1 text-sm text-slate-700">
-    {% if phoneEntry %}
-      <li class="font-medium">📞 {{ phoneEntry.phone }}</li>
-    {% endif %}
-    {% if emailEntry %}
-      <li class="font-medium">📧 {{ emailEntry.email }}</li>
-    {% endif %}
-    {% if addressEntry %}
-      <li class="text-slate-500">📍 {{ addressEntry.address }}</li>
-    {% endif %}
+    {# Telefonlar #}
+    {% for phone in phoneEntries %}
+      {% if phone.phone is not empty %}
+        <li class="font-medium">📞 {{ phone.phone }}</li>
+      {% endif %}
+    {% endfor %}
+
+    {# Emaillər #}
+    {% for mail in emailEntries %}
+      {% if mail.email is not empty %}
+        <li class="font-medium">📧 {{ mail.email }}</li>
+      {% endif %}
+    {% endfor %}
+
+    {# Ünvanlar #}
+    {% for addr in addressEntries %}
+      {% if addr.address is not empty %}
+        <li class="text-slate-500">📍 {{ addr.address }}</li>
+      {% endif %}
+    {% endfor %}
   </ul>
 </div>
