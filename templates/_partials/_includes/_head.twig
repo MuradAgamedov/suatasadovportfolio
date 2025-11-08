@@ -21,6 +21,13 @@
   ?? entry.seoKeywords 
   ?? 'Windows Server, Network, VMware, Hyper-V, Active Directory, IT Support' }}">
 
+{# ✅ Robots meta (index/follow field-lərinə əsasən) #}
+{% set isIndexed = seo.indexed ?? entry.indexed ?? true %}
+{% set isFollowed = seo.followed ?? entry.followed ?? true %}
+
+{% set robotsContent = (isIndexed ? 'index' : 'noindex') ~ ', ' ~ (isFollowed ? 'follow' : 'nofollow') %}
+<meta name="robots" content="{{ robotsContent }}">
+
 {# Tailwind və Lucide ikonları #}
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://cdn.tailwindcss.com"></script>
