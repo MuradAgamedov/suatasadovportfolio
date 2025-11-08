@@ -25,7 +25,7 @@
       <!-- Main navigation -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
         {% set navLinks = [
-          { href: '#xidmetler', label: dict['services']  },
+          { href: '#xidmetler', label: dict['services'] },
           { href: '#sertifikatlar', label: dict['certificates'] },
           { href: '#diplomlar', label: dict['diplomas'] },
           { href: '#haqqimda', label: dict['about'] },
@@ -38,7 +38,7 @@
 
         <!-- Language switcher -->
         <div class="flex items-center gap-2 ml-4">
-          {% for site in allSites %}
+          {% for site in allSites if site.enabled %}
             {% if site.id != currentSite.id %}
               <a href="{{ site.baseUrl }}" class="text-slate-500 hover:text-slate-900 text-xs uppercase">
                 {{ site.language|slice(0,2) }}
