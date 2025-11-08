@@ -3,6 +3,15 @@
 {% set currentSite = craft.app.sites.currentSite %}
 {% set allSites = craft.app.sites.getAllSites() %}
 
+{% set activeSites = [] %}
+{% for site in allSites %}
+  {% if site.enabled == true or site.enabled == 1 %}
+    {% if site.baseUrl is not empty %}
+      {% set activeSites = activeSites|merge([site]) %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
 <!-- Header -->
 <header class="fixed top-0 inset-x-0 z-50">
   <div class="glass shadow-sm border-b border-white/40">
@@ -37,9 +46,9 @@
         <a href="#cv" class="inline-flex items-center rounded-xl border px-3 py-1.5 hover:bg-white">CV</a>
 
         <!-- Language switcher -->
-        <div class="flex items-center gap-2 ml-4">
-          {% for site in allSites %}
-            {% if site.enabled %}
+        {% if activeSites|length > 1 %}
+          <div class="flex items-center gap-2 ml-4">
+            {% for site in activeSites %}
               {% if site.id != currentSite.id %}
                 <a href="{{ site.baseUrl }}" class="text-slate-500 hover:text-slate-900 text-xs uppercase">
                   {{ site.language|slice(0,2) }}
@@ -47,9 +56,9 @@
               {% else %}
                 <span class="text-slate-900 font-semibold text-xs uppercase">{{ site.language|slice(0,2) }}</span>
               {% endif %}
-            {% endif %}
-          {% endfor %}
-        </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </nav>
 
       <!-- Mobile button -->
