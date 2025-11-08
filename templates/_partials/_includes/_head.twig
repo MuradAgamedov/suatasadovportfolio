@@ -21,9 +21,34 @@
   ?? entry.seoKeywords 
   ?? 'Windows Server, Network, VMware, Hyper-V, Active Directory, IT Support' }}">
 
-{# ✅ Robots meta (index/follow field-lərinə əsasən) #}
-{% set isIndexed = seo.indexed is defined and seo.indexed ? true : false %}
-{% set isFollowed = seo.followed is defined and seo.followed ? true : false %}
+{# ✅ Robots meta (index/follow sahələrinə əsasən) #}
+{% set isIndexed = false %}
+{% set isFollowed = false %}
+
+{# SeoData yoxlanışı #}
+{% if seo is defined %}
+  {% if seo.indexed == true %}
+    {% set isIndexed = true %}
+  {% endif %}
+  {% if seo.followed == true %}
+    {% set isFollowed = true %}
+  {% endif %}
+{% endif %}
+
+{# Əgər Entry səviyyəsində də varsa, üstünlük ver #}
+{% if entry is defined %}
+  {% if entry.indexed == true %}
+    {% set isIndexed = true %}
+  {% elseif entry.indexed == false %}
+    {% set isIndexed = false %}
+  {% endif %}
+
+  {% if entry.followed == true %}
+    {% set isFollowed = true %}
+  {% elseif entry.followed == false %}
+    {% set isFollowed = false %}
+  {% endif %}
+{% endif %}
 
 {% set robotsContent = (isIndexed ? 'index' : 'noindex') ~ ', ' ~ (isFollowed ? 'follow' : 'nofollow') %}
 <meta name="robots" content="{{ robotsContent }}">
