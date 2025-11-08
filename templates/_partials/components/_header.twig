@@ -38,13 +38,15 @@
 
         <!-- Language switcher -->
         <div class="flex items-center gap-2 ml-4">
-          {% for site in allSites if site.enabled %}
-            {% if site.id != currentSite.id %}
-              <a href="{{ site.baseUrl }}" class="text-slate-500 hover:text-slate-900 text-xs uppercase">
-                {{ site.language|slice(0,2) }}
-              </a>
-            {% else %}
-              <span class="text-slate-900 font-semibold text-xs uppercase">{{ site.language|slice(0,2) }}</span>
+          {% for site in allSites %}
+            {% if site.enabled %}
+              {% if site.id != currentSite.id %}
+                <a href="{{ site.baseUrl }}" class="text-slate-500 hover:text-slate-900 text-xs uppercase">
+                  {{ site.language|slice(0,2) }}
+                </a>
+              {% else %}
+                <span class="text-slate-900 font-semibold text-xs uppercase">{{ site.language|slice(0,2) }}</span>
+              {% endif %}
             {% endif %}
           {% endfor %}
         </div>
