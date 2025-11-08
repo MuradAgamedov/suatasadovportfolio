@@ -1,8 +1,6 @@
 {# templates/_partials/_includes/_head.twig #}
 
 {% set seo = craft.entries.section('seoData').one() %}
-{{ dump(seo.indexed, seo.followed) }}
-
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +20,36 @@
 <meta name="keywords" content="{{ seo.seoKeyword
   ?? entry.seoKeywords 
   ?? 'Windows Server, Network, VMware, Hyper-V, Active Directory, IT Support' }}">
+
+{# ✅ Robots meta (Lightswitch field-lərinə əsasən) #}
+{% set isIndexed = false %}
+{% set isFollowed = false %}
+
+{% if seo is defined %}
+  {% if seo.indexed == true %}
+    {% set isIndexed = true %}
+  {% endif %}
+  {% if seo.followed == true %}
+    {% set isFollowed = true %}
+  {% endif %}
+{% endif %}
+
+{% if entry is defined %}
+  {% if entry.indexed == true %}
+    {% set isIndexed = true %}
+  {% elseif entry.indexed == false %}
+    {% set isIndexed = false %}
+  {% endif %}
+
+  {% if entry.followed == true %}
+    {% set isFollowed = true %}
+  {% elseif entry.followed == false %}
+    {% set isFollowed = false %}
+  {% endif %}
+{% endif %}
+
+{% set robotsContent = (isIndexed ? 'index' : 'noindex') ~ ', ' ~ (isFollowed ? 'follow' : 'nofollow') %}
+<meta name="robots" content="{{ robotsContent }}">
 
 {# Tailwind və Lucide ikonları #}
 <script src="https://unpkg.com/lucide@latest"></script>
