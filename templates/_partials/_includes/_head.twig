@@ -53,27 +53,6 @@
 {% set robotsContent = (isIndexed ? 'index' : 'noindex') ~ ', ' ~ (isFollowed ? 'follow' : 'nofollow') %}
 <meta name="robots" content="{{ robotsContent }}">
 
-{# ✅ DEV MODE üçün SEO Debug çıxışı #}
-{% if craft.app.config.general.devMode %}
-  <div style="background:#111;color:#0f0;padding:10px;margin:10px;font-family:monospace;">
-    <strong>🔍 SEO Debug:</strong><br>
-    seo.indexed = {{ seo.indexed ?? 'undefined' }}<br>
-    seo.followed = {{ seo.followed ?? 'undefined' }}<br>
-    entry.indexed = {{ entry.indexed ?? 'undefined' }}<br>
-    entry.followed = {{ entry.followed ?? 'undefined' }}<br>
-    Result meta = {{ robotsContent }}
-  </div>
-
-  <script>
-    console.log("🔍 SEO Debug ↓");
-    console.log("seo.indexed =", "{{ seo.indexed ?? 'undefined' }}");
-    console.log("seo.followed =", "{{ seo.followed ?? 'undefined' }}");
-    console.log("entry.indexed =", "{{ entry.indexed ?? 'undefined' }}");
-    console.log("entry.followed =", "{{ entry.followed ?? 'undefined' }}");
-    console.log("robots result =", "{{ robotsContent }}");
-  </script>
-{% endif %}
-
 {# Tailwind və Lucide ikonları #}
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://cdn.tailwindcss.com"></script>
